@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Touch-enabled Image Hover Effects Examples</title>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<style>
+  .container { margin: 150px auto; }
+  .desc { position: absolute; top: 15px; left: 25px; padding: 5px 10px; background-color: #ccc; display: inline-block; border-radius: 3px; font-size: 2rem; }
+</style>
+</head>
+
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/animation/touch-image-hover.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul><div id="carbon-block"></div>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+  <div class="container">
+    <h1>Touch-enabled Image Hover Effects Examples</h1>
+    <p class="lead">A jQuery plugin that applies smooth zoom and grow effects to images when hovering over (desktop) or tapping and holding (mobile device).</p>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="demo">
+          <img src="https://source.unsplash.com/FEdRBBMY3NY/400x300" class="img-fluid" id="demo-1" />
+          <div class="desc">Default</div>
+        </div>
+
+      </div>
+      <div class="col-lg-3">
+        <div class="demo">
+          <img src="https://source.unsplash.com/WrxPwb6-wo8/400x300" class="img-fluid" id="demo-2" />
+          <div class="desc">Zoom Effect</div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="demo">
+          <img src="https://source.unsplash.com/kFCdfLbu6zA/400x300" class="img-fluid" id="demo-3" />
+          <div class="desc">Glow Effect</div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="demo">
+          <img src="https://source.unsplash.com/GlhUl9WuFmA/400x300" class="img-fluid" id="demo-4" />
+          <div class="desc">Disable Touch</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="dist/imghover.min.js"></script>
+<script>
+  $('#demo-1').imgHover();
+  $('#demo-2').imgHover({radius: '0.5rem', grow: false, zoomScale: 1.2});
+  $('#demo-3').imgHover({radius: '0.5rem', zoom: false, growScale: 1.07});
+  $('#demo-4').imgHover({touch: false});
+  </script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+</body>
+</html>
